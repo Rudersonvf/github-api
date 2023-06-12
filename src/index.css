@@ -2,7 +2,10 @@
 
 :root {
   --color-bg-header: #1890ff;
+  --color-bg-button: #1890ff;
   --color-font-primary: #FFF;
+  --color-font-secondary: #000;
+  --color-font-tertiary: #7E7E7E;
 
 }
 
@@ -26,3 +29,6 @@ a:hover {
 
 /*-----------------------------------------------------------------*/
 /* generic styles */
+.dflex {
+  display: flex;
+}

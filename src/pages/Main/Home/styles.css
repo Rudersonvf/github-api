@@ -1,0 +1,26 @@
+.ga-section-container {
+    width: 100%;
+    padding: 27px 41px;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.ga-inner-section-container {
+    width: 100%;
+}
+
+.ga-inner-section-container h2 {
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing:0.9px;
+    color: var(--color-font-secondary);
+}
+
+.ga-inner-section-container p {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.5px;
+    color: var(--color-font-tertiary);
+}

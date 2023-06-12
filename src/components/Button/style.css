@@ -1,0 +1,9 @@
+button {
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--color-bg-button);
+    padding: 0 18px;
+    font-size: 16px;
+    color: var(--color-font-primary);
+}
