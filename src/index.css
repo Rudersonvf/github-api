@@ -1,19 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
 :root {
+  --color-bg-header: #1890ff;
+  --color-font-primary: #FFF;
 
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 html,
 body {
-    background-color: var(--color-bg-primary);
+  background-color: var(--color-bg-primary);
 }
 
 a,
@@ -21,7 +23,6 @@ a:hover {
   text-decoration: none;
   color: unset;
 }
-  
-  /*-----------------------------------------------------------------*/
-  /* generic styles */
-  
+
+/*-----------------------------------------------------------------*/
+/* generic styles */
