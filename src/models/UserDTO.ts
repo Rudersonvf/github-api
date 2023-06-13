@@ -1,6 +1,6 @@
 export type UserDTO = {
-    avatarUrl: string
-    htmlUrl: string
+    avatar_url: string
+    html_url: string
     followers: number
     location: string
     name: string

@@ -9,6 +9,7 @@
   --color-font-tertiary: #7E7E7E;
   --color-font-quaternary: #262626;
   --color-font-placeholder: #BFBFBF;
+  --color-font-input: #5C5858;
   --color-border-primary: #D9D9D9;
 
 }
@@ -35,4 +36,14 @@ a:hover {
 /* generic styles */
 .dflex {
   display: flex;
+}
+
+/* Autocomplete background color */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+/* Autocomplete placeholder text color */
+input:-webkit-autofill {
+  -webkit-text-fill-color: var(--color-font-input) !important;
 }
