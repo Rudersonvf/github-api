@@ -5,9 +5,5 @@ type Props = {
 };
 
 export default function Button({ text }: Props) {
-  return (
-  <div className="dflex">
-    <button type="submit">{text}</button>
-  </div>
-  );
+  return <button type="submit">{text}</button>;
 }

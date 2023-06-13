@@ -1,0 +1,42 @@
+.ga-search-container {
+  width: 100%;
+  padding: 54px 90px;
+}
+
+.ga-card-container {
+  width: 100%;
+  padding: 54px 31px;
+  background-color: var(--color-bg-card);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ga-card-container h2 {
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 46px;
+  color: var(--color-font-quaternary);
+}
+
+.ga-card-container form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.ga-card-container input {
+  width: 298px;
+  height: 40px;
+  border: 1px solid var(--color-border-primary);
+  border-radius: 4px;
+  padding: 0 17px;
+}
+
+.ga-card-container input::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-font-placeholder);
+}

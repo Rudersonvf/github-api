@@ -3,9 +3,13 @@
 :root {
   --color-bg-header: #1890ff;
   --color-bg-button: #1890ff;
+  --color-bg-card: #E6F7FF;
   --color-font-primary: #FFF;
   --color-font-secondary: #000;
   --color-font-tertiary: #7E7E7E;
+  --color-font-quaternary: #262626;
+  --color-font-placeholder: #BFBFBF;
+  --color-border-primary: #D9D9D9;
 
 }
 
