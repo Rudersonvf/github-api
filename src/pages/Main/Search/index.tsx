@@ -3,37 +3,40 @@ import Button from "../../../components/Button";
 import "./styles.css";
 import * as userService from "../../../services/user-service";
 import { UserDTO } from "../../../models/UserDTO";
+import UserCard from "../../../components/UserCard";
+import NotFound from "../../../components/NotFound";
 
 type FormData = {
-    userName: string
-}
+  userName: string;
+};
 
 export default function Search() {
+  const [formData, setFromData] = useState<FormData>({
+    userName: "",
+  });
+  const [userData, setUserData] = useState<UserDTO>();
+  const [error, setError] = useState();
 
-    const [formData, setFromData] = useState<FormData>({
-        userName: ""
-    });
-    const [userData, setUserData] = useState<UserDTO>();
-    const [error, setError] = useState();
+  function handleInputChange(event: any) {
+    const value = event.target.value;
+    const name = event.target.name;
+    setFromData({ ...formData, [name]: value });
+    console.log(formData);
+  }
 
-    function handleInputChange(event: any) {
-        const value = event.target.value;
-        const name = event.target.name;
-        setFromData({...formData, [name]: value});
-        console.log(formData);
-    }
-    
-    function handleFormSubmit(event: any) {
-        event.preventDefault();
-        userService.findByName(formData.userName).then(response => {
-            setUserData(response.data)
-            console.log(userData);
-        }).catch((error) => {
-            setError(error.response.data);
-        }), [];
-    }
-
-    
+  function handleFormSubmit(event: any) {
+    event.preventDefault();
+    userService
+      .findByName(formData.userName)
+      .then((response) => {
+        setUserData(response.data);
+        console.log(userData);
+      })
+      .catch((error) => {
+        setError(error.response.data);
+      }),
+      [];
+  }
 
   return (
     <main>
@@ -53,6 +56,8 @@ export default function Search() {
             </div>
           </form>
         </div>
+        {(userData && <UserCard dataUser={userData} />) ||
+          (error && <NotFound />)}
       </section>
     </main>
   );
