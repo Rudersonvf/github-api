@@ -1,15 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
 :root {
+  --color-bg-primary: #FFF;
   --color-bg-header: #1890ff;
   --color-bg-button: #1890ff;
   --color-bg-card: #E6F7FF;
+  --color-bg-user-card: #F5F5F5;
   --color-font-primary: #FFF;
   --color-font-secondary: #000;
   --color-font-tertiary: #7E7E7E;
   --color-font-quaternary: #262626;
   --color-font-placeholder: #BFBFBF;
   --color-font-input: #5C5858;
+  --color-font-info: #1890FF;
+  --color-font-link: #0029FF;
+  --color-font-field: #737373;
   --color-border-primary: #D9D9D9;
 
 }

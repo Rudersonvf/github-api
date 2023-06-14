@@ -12,10 +12,10 @@ export default function UserCard({dataUser}: Props) {
             <div className="ga-info-container">
                 <h2>Informações</h2>
                 <div className="ga-fields-container">
-                    <div className="ga-field"><p>Perfil:<span>{dataUser.html_url}</span></p></div>
-                    <div className="ga-field"><p>Seguidores:<span>{dataUser.followers}</span></p></div>
-                    <div className="ga-field"><p>Localidade:<span>{dataUser.location}</span></p></div>
-                    <div className="ga-field"><p>Nome:<span>{dataUser.name}</span></p></div>
+                    <div className="ga-field"><p>Perfil:&nbsp;<a href={dataUser.html_url}>{dataUser.html_url}</a></p></div>
+                    <div className="ga-field"><p>Seguidores:&nbsp;<span>{dataUser.followers}</span></p></div>
+                    <div className="ga-field"><p>Localidade:&nbsp;<span>{dataUser.location}</span></p></div>
+                    <div className="ga-field"><p>Nome:&nbsp;<span>{dataUser.name}</span></p></div>
                 </div>
             </div>
         </div>

@@ -1,6 +1,9 @@
 .ga-search-container {
   width: 100%;
   padding: 54px 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
 }
 
 .ga-card-container {
